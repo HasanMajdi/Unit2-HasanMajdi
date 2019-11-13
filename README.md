@@ -1,5 +1,5 @@
-# Unit2-HasanMajdi-
-![CarRental](Unit2.png)
+# Binary-Morse program | Unit2-HasanMajdi-
+![Binary-MorseProgram](Unit2.png)
 
 Binary-Morse program 
 ===========================
