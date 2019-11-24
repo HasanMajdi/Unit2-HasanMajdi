@@ -78,6 +78,28 @@ void loop()
 		}
 }
 ```
+*Sequence*
+
+This is a program that prints a sequence of numbers from 0 to 6 repeatedly.
+```
+char *myStrings[] = {"0123456" };
+
+void setup()
+{ 
+  Serial.begin(9600);
+}
+
+void loop()
+{
+for (int i = 0; i < 1; i++) {
+    Serial.println(myStrings[i]);
+    delay(10);
+}
+}
+```
+**Traffic Light** 
+This is a traffic built in class by arduino. 
+``` 
 
 
  
