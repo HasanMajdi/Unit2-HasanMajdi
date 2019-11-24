@@ -31,8 +31,7 @@ Development
  ### Serial Mentor 
  It is the screen where you see the output of the code you wrote.
  
- ***Codes Content***
- 
+ ***Arduino Codes Content***
   
  1.```
  void setup()
@@ -47,6 +46,36 @@ void loop()
 }
 .```
 this part of the code will loop, which means everything you put inside will be repeated. 
+the variable ```void``` indicates that the function is expected to return no information to the function from which it was called.
+
+### Practicing coding with modern C
+
+*OddEven* 
+this is a program that prints all Odd and Even numbers from 1 to 1000. 
+
+```.C 
+int result = 0;
+int odd = 0;
+
+void setup()
+{
+ Serial.begin(9600);
+}
+
+void loop()
+{
+  for (int x = 1; x < 1001; x+=2) {
+  Serial.println("even numbers are"); 
+  Serial.println(result+x); 
+   
+  }
+    
+    for (int i = 2; i < 1001; i+=2) {
+  Serial.println("odd numbers are"); 
+  Serial.println(odd+i);  
+		}
+}
+```.C
 
 
  
