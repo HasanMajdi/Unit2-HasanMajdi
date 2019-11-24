@@ -96,7 +96,7 @@ void blink(int time, int port){
 
 ### Practicing coding with modern C
 
-*OddEven*
+**OddEven**
 
 this is a program that prints all Odd and Even numbers from 1 to 1000. 
 
@@ -123,7 +123,7 @@ void loop()
 		}
 }
 ```
-*Sequence*
+**Sequence**
 
 This is a program that prints a sequence of numbers from 0 to 6 repeatedly.
 ```.C
@@ -142,6 +142,37 @@ for (int i = 0; i < 1; i++) {
 }
 }
 ```
+**7Factors**
+this program prints the factors of number 7 from 7 to 700. 
+```.C 
+void setup()
+{
+  Serial.begin(9600);
+}
+
+void loop()
+{
+ for (int i = 0; i < 707; i+=7) { 
+   Serial.println(i);
+}
+ 	}
+```
+**Greetings**
+This program prints greetings in Arabc.
+```.C
+char *myStrings[] = {"Merhaba"};
+
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+  for (int i = 0; i < 1; i++) {
+    Serial.println(myStrings[i]);
+  }
+}
+```
+
 **Traffic Light** 
 
 This is a Traffic Light created by ThinkerCard, then built in class by Arduino. 
@@ -189,7 +220,8 @@ This program creates a binary counter from 0 to 31 with arduino using LED lights
 
 ![Binary-MorseProgram](CounterFD.jpg)
 
-# How to convert from decimal to binary
+**How to convert from decimal to binary**
+
 1. Divide the dividend (number) by divisor 2 and get the remainder and the quotient.
 2. If the remainder is not zero then becomes dividend and follow above steps. 
 3. As the quotient has become zero, the binary is all the remainders from bottom or from right side which consists of 0 & 1.
