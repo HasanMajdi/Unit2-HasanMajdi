@@ -143,6 +143,7 @@ for (int i = 0; i < 1; i++) {
 }
 ```
 **7Factors**
+
 this program prints the factors of number 7 from 7 to 700. 
 ```.C 
 void setup()
@@ -158,7 +159,8 @@ void loop()
  	}
 ```
 **Greetings**
-This program prints greetings in Arabc.
+
+This program prints greetings in Arabic.
 ```.C
 char *myStrings[] = {"Merhaba"};
 
