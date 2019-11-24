@@ -181,7 +181,7 @@ void loop()
 } 
 ```
  
-**Counter In Arduino** 
+**Counter In Arduino**
 
 This program creates a binary counter from 0 to 31 with arduino using LED lights. 
 
@@ -199,4 +199,44 @@ The result is always a whole integer.
 
 If n is greater than a the result is a. 
 
+**code for the counter**
+```.C
+int ledPin[] = {13,12,11,10,9,8};
+// an arry to de
+fine the pins
 
+void setup()
+{
+  for (int i = 0; i < 6; i++)
+  {
+    pinMode(ledPin[i], OUTPUT);
+  }
+}
+
+void loop()
+{
+  for (byte counter = 0; counter <= 32; counter++)
+  {
+    displayBinary(counter);
+    delay(2000);
+  }
+}
+
+void displayBinary(byte num)
+{
+  for (int i = 0; i < 6; i++)
+  {
+    if (bitRead(num, i)==1)
+    {
+      digitalWrite(ledPin[i], HIGH);
+    }
+    else
+    {
+      digitalWrite(ledPin[i], LOW);
+    }
+  }
+
+}
+```
+**Counter in class with arduino**
+![Binary-MorseProgram](CounterArd.jpg)
