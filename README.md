@@ -187,6 +187,6 @@ This program creates a binary counter from 0 to 31 with arduino using LED lights
 
 *Flow Diagram*
 
-![Binary-MorseProgram](CounterFD.pdf)
+![Binary-MorseProgram](CounterFD.jpg)
 
 
