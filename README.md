@@ -280,6 +280,13 @@ void displayBinary(byte num)
 **Counter in class with arduino**
 ![Binary-MorseProgram](CounterArd.jpg)
 
-### Logic Gates and Logical Equations
-Logic gates are the basic building blocks of any digital system. It is an electronic circuit having one or more than one input and only one output. The relationship between the input and the output is based on a certain logic. Based on this, logic gates are named as AND gate, OR gate, NOT gate XOR gate or so.
+### Logic Gates, K-Map Tables and Logical Equations
 ![Binary-MorseProgram](LogicGates.jpeg)
+Logic gates are the basic building blocks of any digital system. It is an electronic circuit having one or more than one input and only one output. The relationship between the input and the output is based on a certain logic. Based on this, logic gates are named as AND gate, OR gate, NOT gate XOR gate or so.
+
+**K-Map Tables**
+The Karnaugh map is a method of simplifying Boolean algebra expressions.
+
+
+
+
