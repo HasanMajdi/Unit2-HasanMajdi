@@ -146,6 +146,9 @@ for (int i = 0; i < 1; i++) {
 
 This is a Traffic Light created by ThinkerCard, then built in class by Arduino. 
 ![Binary-MorseProgram](Traffic.png)
+
+In class using Arduino Kit.
+
 ![Binary-MorseProgram](Traffic1.png)
 
 *Code*
