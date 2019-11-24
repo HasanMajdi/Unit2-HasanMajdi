@@ -286,7 +286,6 @@ Logic gates are the basic building blocks of any digital system. It is an electr
 
 **K-Map Tables**
 The Karnaugh map is a method of simplifying Boolean algebra expressions.
-
-
+![Binary-MorseProgram](Kmap.gif)
 
 
