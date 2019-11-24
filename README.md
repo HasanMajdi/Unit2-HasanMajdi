@@ -293,3 +293,4 @@ The Karnaugh map is a method of simplifying Boolean algebra expressions.
 Equations for outputs B and C from this table.
 ![Binary-MorseProgram](kmap2.jpg)
 
+
