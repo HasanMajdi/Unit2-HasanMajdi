@@ -193,6 +193,7 @@ This program creates a binary counter from 0 to 31 with arduino using LED lights
 1. Divide the dividend (number) by divisor 2 and get the remainder and the quotient.
 2. If the remainder is not zero then becomes dividend and follow above steps. 
 3. As the quotient has become zero, the binary is all the remainders from bottom or from right side which consists of 0 & 1.
+
 **Using Modulo** 
 Finding the remainder of division of one number by another. 
 For example: ```a % n = r ```. ``` 5 % 2 = 1 ``` because there are two pairs and only one left.
