@@ -33,23 +33,23 @@ Development
  
  ***Arduino Codes Content***
   
- 1.```.C
+ 1.```
  void setup()
 {
 }
  .```
 this part will run only once. 
 
-2.```.C
+2.```
 void loop()
 {
 }
 .```
 this part of the code will loop, which means everything you put inside will be repeated. 
 
-the variable ```.C void``` indicates that the function is expected to return no information to the function from which it was called.
+the variable ```void``` indicates that the function is expected to return no information to the function from which it was called.
 
-3.```.C Functions``` are blocks of organized, reusable code that is used to perform related action again, which means they are used to avoid repetition of the commands in a code. 
+3.```Functions``` are blocks of organized, reusable code that is used to perform related action again, which means they are used to avoid repetition of the commands in a code. 
  
 *Example of the use of functions
 
@@ -180,4 +180,5 @@ void loop()
 **Counter In Arduino** 
 
 This program creates a binary counter from 0 to 31 with arduino using LED lights. 
+
 
