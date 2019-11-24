@@ -102,5 +102,4 @@ for (int i = 0; i < 1; i++) {
 This is a traffic built in class by arduino. 
 ![Binary-MorseProgram](Screen Shot 2019-11-24 at 11.05.35.png)
 
-
  
