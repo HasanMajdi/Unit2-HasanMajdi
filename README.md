@@ -81,7 +81,7 @@ void loop()
 *Sequence*
 
 This is a program that prints a sequence of numbers from 0 to 6 repeatedly.
-```
+```.C
 char *myStrings[] = {"0123456" };
 
 void setup()
@@ -99,7 +99,36 @@ for (int i = 0; i < 1; i++) {
 ```
 **Traffic Light** 
 
-This is a traffic built in class by arduino. 
+This is a Traffic Light created by ThinkerCard, then built in class by Arduino. 
 ![Binary-MorseProgram](Traffic.png)
 
+*Code*
+
+```.C
+void setup()
+{
+  pinMode(13, OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(8 , OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(10, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(10, LOW);
+  delay(100); // Wait for 1000 millisecond(s)
+  
+  digitalWrite(13, HIGH);
+  delay(1160); // Wait for 1000 millisecond(s)
+  digitalWrite(13, LOW);
+  delay(100); // Wait for 1000 millisecond(s)
+  
+  digitalWrite(8, HIGH);
+  delay(5000); // Wait for 1000 millisecond(s)
+  digitalWrite(8, LOW);
+  delay(1000); // Wait for 1000 millisecond(s)
+  
+} 
+```
  
