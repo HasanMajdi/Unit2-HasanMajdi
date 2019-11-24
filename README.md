@@ -191,9 +191,12 @@ This program creates a binary counter from 0 to 31 with arduino using LED lights
 
 **Using Modulo** 
 Finding the remainder of division of one number by another. 
-For example: ```a % n = r ``` ``` 5 % 2 = 1 ``` because there are two pairs and only one left.
+For example: ```a % n = r ```. ``` 5 % 2 = 1 ``` because there are two pairs and only one left.
+
 If n = 0 the equation may return undefined.
+
 The result is always a whole integer.
+
 If n is greater than a the result is a. 
 
 
