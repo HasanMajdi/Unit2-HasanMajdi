@@ -149,7 +149,7 @@ This is a Traffic Light created by ThinkerCard, then built in class by Arduino.
 
 In class using Arduino Kit.
 
-![Binary-MorseProgram](Traffic1.png)
+![Binary-MorseProgram](Traffic1.jpg)
 
 *Code*
 
