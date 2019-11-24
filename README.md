@@ -46,11 +46,13 @@ void loop()
 }
 .```
 this part of the code will loop, which means everything you put inside will be repeated. 
+
 the variable ```void``` indicates that the function is expected to return no information to the function from which it was called.
 
 ### Practicing coding with modern C
 
-*OddEven* 
+*OddEven*
+
 this is a program that prints all Odd and Even numbers from 1 to 1000. 
 
 ```.C 
@@ -75,7 +77,7 @@ void loop()
   Serial.println(odd+i);  
 		}
 }
-```.C
+```
 
 
  
