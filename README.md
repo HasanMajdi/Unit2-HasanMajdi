@@ -49,6 +49,51 @@ this part of the code will loop, which means everything you put inside will be r
 
 the variable ```void``` indicates that the function is expected to return no information to the function from which it was called.
 
+3.```Functions``` are blocks of organized, reusable code that is used to perform related action again, which means they are used to avoid repetition of the commands in a code. 
+ 
+*Example of the use of functions
+
+```.C
+// this is an example of using functions 
+
+int redLED = 13; 
+  int greenLED = 12;
+  int orangeLED = 11;
+	int whiteLED = 9; 
+	int blueLED = 8;
+	int yellowLED = 7;
+
+
+void setup()
+{
+  pinMode(redLED, OUTPUT);
+  pinMode(greenLED, OUTPUT);
+  pinMode(yellowLED, OUTPUT); 
+  pinMode(orangeLED, OUTPUT);
+  pinMode(whiteLED, OUTPUT);
+  pinMode(blueLED, OUTPUT);
+}
+
+void loop()
+{
+  blink(1000, redLED);
+  blink(1000, greenLED);
+  blink(1000, yellowLED);
+  blink(1000, whiteLED);
+  blink(1000, blueLED);
+  blink(1000, orangeLED);
+  
+}
+// this function blinks a LED
+// only argument is the time 
+void blink(int time, int port){
+  digitalWrite(port, HIGH);
+  delay(time); // Wait for 1000 millisecond(s)
+  digitalWrite(port, LOW);
+  delay(time); // Wait for 1000 millisecond(s)
+}
+```
+
 ### Practicing coding with modern C
 
 *OddEven*
@@ -132,3 +177,7 @@ void loop()
 } 
 ```
  
+**Counter In Arduino** 
+
+This program creates a binary counter from 0 to 31 with arduino using LED lights. 
+
