@@ -1,3 +1,26 @@
+Feedback Nov 26 (You can deleted this section later. It will remain in the history of the file)
+
+|No.|How to improve        |
+|-|------------- |
+|①| I can understand what you are trying to say with definition of the problem and the proposed solution, however, you need to expand the ideas a bit more. Add details. Some questions that will help you write these two sections: 1. Who is your client? what is the problem? what tools will you used in the proposed solution? why those tools and no other?| 
+|②| Let's try to include at least 5 success criteria afther the proposed solution. They can be small such as: The system uses 100W lights for communication. You will measure your solution againts these criteria.|
+|③| Great job with the Development section and documentating your progress. Keep adding pictures, small parts of code, sketches, flow diagrams. In addition to writing what the program does, for example: "this is a program that prints all Odd and Even numbers from 1 to 1000. ", you can mention important parts of the code where you learnt something new. |
+
+**For example**
+Fig. 2 shows the program that prints all Odd numbers from 1 to 1000. This is accomplished by changing the increment in the for loop to be 2.
+```.c
+for (int x = 1; x < 1001; x+=2) {
+  Serial.println("even numbers are"); 
+  Serial.println(result+x);   
+  }
+```
+
+|No.|How to improve        |
+|-|------------- |
+|④　|Add your References at the bottom of the page using MLA format. I have added the section for you to fill in.|
+
+----
+
 # Binary-Morse program | Unit2-HasanMajdi-
 ![Binary-MorseProgram](Unit2.png)
 
