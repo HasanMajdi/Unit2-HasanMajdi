@@ -293,4 +293,11 @@ The Karnaugh map is a method of simplifying Boolean algebra expressions.
 Equations for outputs B and C from this table.
 ![Binary-MorseProgram](kmap2.jpg)
 
+**What is Usability?**
+It is part of user experience. 
+Process of designing a product with users preferences in mind. 
+degree of ease that a product can be used to attain the proposed goal.
+
+
+
 
