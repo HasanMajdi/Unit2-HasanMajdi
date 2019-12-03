@@ -326,12 +326,16 @@ Equations for outputs B and C from this table.
 
 We are using this method to decrease the amount of time and effort spent on the code. 
 
- ```.C
- bool equa = b || (!a && !a && !c) || (a && c);
-    digitalWrite(outa, equa);  
-        ```
+(   bool equa = b || (!a && !a && !c) || (a && c);
+    digitalWrite(outa, equa);    )
     
-   for example the code here is used by the equation from the truth tables we did in the class. 
+    for example the code here is the equation we got from the truth tables we did in the class. 
+    
+   
+   **Using LCD Screen**
+   
+   using LCD screen is really important for this project, because it is part of the sccess criteria to include it. also because we want the client to be comfortable using the project. 
+   
 
 
 
