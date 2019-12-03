@@ -336,6 +336,8 @@ We are using this method to decrease the amount of time and effort spent on the 
    
    using LCD screen is really important for this project, because it is part of the sccess criteria to include it. also because we want the client to be comfortable using the project. 
    
+   ![Binary-MorseProgram](LCD.png)
+
 
 
 
