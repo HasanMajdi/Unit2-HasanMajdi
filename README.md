@@ -39,11 +39,19 @@ Contents
   Planning
 ----------
 ### Definition of the problem 
-we are in the year 2050, people are travelling around the universe and we have a problem transfering messages, it is really important thing to communicate with others. so here we are working on a program that transfer understandable messages from earth to moon in Morse code then sending from moon to mars using binary code, the messeges should be understandable the same way on the three stations.
+we are in the year 2050, people are travelling around the universe and we have a problem transfering messages between astroununts, it is a really important thing to have a good tool to communicate with others. so here we are working on arduino to build a stations that transfer understandable messages from earth to moon in Morse code then sending from moon to mars using binary code, using simple two arduino buttons method, the messeges should be understandable the same way on the three stations.
 
 ### Solution proposed
-we are using arduino to build a three stations, in three buildings, each building represent a planet (earth - moon - mars) 
-then sending messages from/to these stations.
+so we are using arduino to build a three stations, in three buildings, each building represent a planet (earth - moon - mars) 
+then sending messages from/to these stations, why arduino? because arduino is simple to use, cheab, and avaliable for us, it provides us with what we need to complet this project.
+
+### Success criteria 
+1. Messages should be transfered from/to each station(planet).
+2. The system uses 100W lights for communication.
+3. The system uses two buttons only to write the messages. 
+4. LCD screen is there to show the messages.
+5. The system allows the clients to use all English letters, all numbers, and SEND, DELETE, and SPACE are existed options
+6. The system is simple to use and considering Usability.
 
 Development
 -----------
@@ -183,7 +191,7 @@ void loop()
 ```
 **Greetings**
 
-This program prints greetings in Arabic.
+This program prints greetings in Arabic/Turkish.
 ```.C
 char *myStrings[] = {"Merhaba"};
 
@@ -316,10 +324,29 @@ The Karnaugh map is a method of simplifying Boolean algebra expressions.
 Equations for outputs B and C from this table.
 ![Binary-MorseProgram](kmap2.jpg)
 
+We are using this method to decrease the amount of time and effort spent on the code. 
+
+ ```.C
+ bool equa = b || (!a && !a && !c) || (a && c);
+    digitalWrite(outa, equa);  
+        ```
+    
+   for example the code here is used by the equation from the truth tables we did in the class. 
+
+
+
+
+
+
 **What is Usability?**
+
 It is part of user experience. 
 Process of designing a product with users preferences in mind. 
 degree of ease that a product can be used to attain the proposed goal.
+
+**Refrence**
+international design fundation "Usability". 25 Nov, 2019
+
 
 
 
