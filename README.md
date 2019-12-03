@@ -342,7 +342,14 @@ We are using this method to decrease the amount of time and effort spent on the 
 
 
 
+### Important Terms
 
+**CPU:**  Central Processing Unit 
+**RAM:**  Random Access Memory 
+**ROM:**  Read-Only-Memory 
+**Feasibility Study:**  Analyzes a project and its potential, it is used to tell whether the project is should be pursued or not
+
+**Utilitarianism:** When designing a new system, we usually try to design it for the greatest good for the greatest number of people. Utilitarianism • When designing a new system, we usually try to design it for the greatest good for the greatest number of people. 
 
 **What is Usability?**
 
