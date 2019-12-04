@@ -315,10 +315,6 @@ We are using this method to decrease the amount of time and effort spent on the 
    
    ![Binary-MorseProgram](LCD.png)
 
-
-
-
-
 ### Important Terms
 
 **CPU:**  Central Processing Unit
@@ -340,6 +336,11 @@ degree of ease that a product can be used to attain the proposed goal.
 **Refrence**
 international design fundation "Usability". 25 Nov, 2019
 
+**What is HCD?**
+human-centered design or (HCD), it is a Design processes which involve the end user throughout the product development and testing process, can be crucial in ensuring that the product meets the needs and capabilities of the user.
+
+**Refrence** 
+NCBI, "Human-Centered Design Study: Enhancing the Usability of a Mobile Phone App in an Integrated Falls Risk Detection System for Use by Older Adult Users". by Arun Keepanasseril. 30 May, 2017 
 
 
 
