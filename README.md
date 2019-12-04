@@ -327,6 +327,8 @@ We are using this method to decrease the amount of time and effort spent on the 
 
 **Utilitarianism:** When designing a new system, we usually try to design it for the greatest good for the greatest number of people. Utilitarianism • When designing a new system, we usually try to design it for the greatest good for the greatest number of people. 
 
+**Logic Gates:** A combinational circuit that performs an elementary logic operation and usually involves one output.
+
 **What is Usability?**
 
 It is part of user experience. 
