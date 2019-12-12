@@ -344,14 +344,16 @@ human-centered design or (HCD), it is a Design processes which involve the end u
 **Refrence** 
 NCBI, "Human-Centered Design Study: Enhancing the Usability of a Mobile Phone App in an Integrated Falls Risk Detection System for Use by Older Adult Users". by Arun Keepanasseril. 30 May, 2017 
 
-**Arduino VS Computer**
+****Arduino VS Computer****
 
-**Peripherals: ** 
+**Peripherals:** 
 
 Input or output devices that are connected to computer are called peripheral devices.
 These devices are designed to read information into or out of the memory unit upon command from the CPU and are considered to be the part of computer system. 
 
 **Where in the Arduino?**
+
+   ![Binary-MorseProgram](Peripherals.png)
 
 In Arduino there are:
  18  Digital Outputs pins. 
