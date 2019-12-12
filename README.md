@@ -353,13 +353,23 @@ These devices are designed to read information into or out of the memory unit up
 
 **Where in the Arduino?**
 
-   ![Binary-MorseProgram](Peripherals.png)
+![Binary-MorseProgram](Peripherals.png)
 
 In Arduino there are:
+
  18  Digital Outputs pins. 
+ 
 8  Power/Reset Pins. 
+
 6  Analog Inputs.
 
+**Where in the computer?**
+peripheral or peripheral device is an ancillary device used to put information into and get information out of the (computer). 
 
+**Input peripherals:** Allows user input, from the outside world to the computer. Example: Keyboard, Mouse etc.
+
+**Output peripherals:** Allows information output, from the computer to the outside world. Example: Printer, Monitor etc.
+
+**Input-Output peripherals:** Allows both input(from outised world to computer) as well as, output(from computer to the outside world). Example: Touch screen etc.
 
 
