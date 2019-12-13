@@ -364,6 +364,9 @@ In Arduino there are:
 6  Analog Inputs.
 
 **Where in the computer?**
+
+![Binary-MorseProgram](1peripherals.png)
+
 peripheral or peripheral device is an ancillary device used to put information into and get information out of the (computer). 
 
 **Input peripherals:** Allows user input, from the outside world to the computer. Example: Keyboard, Mouse etc.
