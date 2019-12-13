@@ -365,7 +365,7 @@ In Arduino there are:
 
 **Where in the computer?**
 
-![Binary-MorseProgram](1peripherals.png)
+![Binary-MorseProgram](1peripharls.png)
 
 peripheral or peripheral device is an ancillary device used to put information into and get information out of the (computer). 
 
