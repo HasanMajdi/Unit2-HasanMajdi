@@ -188,6 +188,10 @@ void loop() {
 This is a Traffic Light created by ThinkerCard, then built in class by Arduino. 
 ![Binary-MorseProgram](Traffic.png)
 
+**Fig. 1.** Circuit for the traffci light
+
+As you can see in Fig. 1, the circuit for the traffic light includes three LEDs, connected with wires to the Arduino.
+
 In class using Arduino Kit.
 
 ![Binary-MorseProgram](Traffic1.jpg)
@@ -333,16 +337,10 @@ We are using this method to decrease the amount of time and effort spent on the 
 
 It is part of user experience. 
 Process of designing a product with users preferences in mind. 
-degree of ease that a product can be used to attain the proposed goal.
-
-**Refrence**
-international design fundation "Usability". 25 Nov, 2019
+degree of ease that a product can be used to attain the proposed goal [1].
 
 **What is HCD?**
-human-centered design or (HCD), it is a Design processes which involve the end user throughout the product development and testing process, can be crucial in ensuring that the product meets the needs and capabilities of the user.
-
-**Refrence** 
-NCBI, "Human-Centered Design Study: Enhancing the Usability of a Mobile Phone App in an Integrated Falls Risk Detection System for Use by Older Adult Users". by Arun Keepanasseril. 30 May, 2017 
+human-centered design or (HCD), it is a Design processes which involve the end user throughout the product development and testing process, can be crucial in ensuring that the product meets the needs and capabilities of the user [2].
 
 ****Arduino VS Computer****
 
@@ -374,5 +372,11 @@ peripheral or peripheral device is an ancillary device used to put information i
 **Output peripherals:** Allows information output, from the computer to the outside world. Example: Printer, Monitor etc.
 
 **Input-Output peripherals:** Allows both input(from outised world to computer) as well as, output(from computer to the outside world). Example: Touch screen etc.
+
+## References
+[1]  international design fundation "Usability". 25 Nov, 2019
+
+[2] NCBI, "Human-Centered Design Study: Enhancing the Usability of a Mobile Phone App in an Integrated Falls Risk Detection System for Use by Older Adult Users". by Arun Keepanasseril. 30 May, 2017
+
 
 
