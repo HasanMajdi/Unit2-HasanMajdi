@@ -1,0 +1,188 @@
+1st program; 
+
+void main(){ 
+  //1. define variables
+  int input=0; 
+  int residul=0;
+  //2. get input from user
+  printf("enter number"); 
+  scanf("%i", &input); 
+  //3. calculate residual div 2
+  if  (input%2 == 0) {
+        printf("%d is an even integer.",input);
+    }
+    else {
+        printf("%d is an odd integer.",input);
+    } 
+} 
+
+---------------------------------------------------
+
+2nd program; 
+
+void main(){
+   
+  //1. define variables 
+  int input=0; 
+  //2. get input from user
+  printf("enter a number"); 
+  scanf("%i", &input); 
+  //3. check if it is positive or not 
+  if (input > 0 ){ 
+     printf("%i is positive", input);
+  } 
+     else {
+     printf("%i is negative", input); 
+  }
+}
+
+---------------------------------------------------
+
+3rd program; 
+
+void main (){ 
+
+int age = 0; 
+
+  printf("enetr your age"); 
+  scanf("%i", &age); 
+
+  if (age >= 18)
+      printf("congratulations! you are eligible for casting your vote"); 
+      else
+        printf("Sorry you are not eligible for voting"); 
+}
+
+---------------------------------------------------
+
+4th program;
+
+void main (){ 
+  int input=0, input2=0, input3=0;  
+
+  printf("Enter three numbers"); 
+  scanf("%i %i %i", &input ,&input2, &input3);
+
+  if (input >= input2 && input >= input3) 
+        printf("%i is the largest number.", input); 
+  
+    else if (input2 >= input && input2 >= input3) 
+        printf("%i is the largest number.", input2); 
+  
+    else
+        printf("%i is the largest number.", input3);
+               
+}
+
+---------------------------------------------------
+
+5th program; 
+
+void main(){ 
+
+int x, y;
+
+printf("Enter X and Y values"); 
+scanf("%i %i", &x, &y); 
+
+if (x > 0 && y > 0)
+        printf("point (%i, %i) lies in the First quandrant", x, y);
+    else if (x < 0 && y > 0)
+        printf("point (%i, %i) lies in the Second quandrant", x, y);
+    else if (x < 0 && y < 0)
+        printf("point (%i, %i) lies in the Third quandrant", x, y);
+    else if (x > 0 && y < 0)
+        printf("point (%i, %i) lies in the Fourth quandrant" , x, y);
+    else if (x == 0 && y == 0)
+        printf("point (%i, %i) lies at the origin", x, y);
+}
+
+---------------------------------------------------
+
+6th program; 
+
+void main() {
+   
+   int m, p, c, total, totalmp; 
+  
+  printf("Enter the marks as: Math, Physics, Chemstery");
+  scanf("%i %i %i", &m, &p, &c);
+
+  if(m >= 65)
+  printf("The candidate is eligible for the admission"); 
+   else if (p >= 55)
+   printf("The candidate is eligible for the admission"); 
+   else if (c >= 50) 
+    printf("The candidate is eligible for the admission"); 
+    else if (m + p + c >= 180) 
+    printf("The candidate is eligible for the admission"); 
+    else if (m + p >= 140)
+    printf("The candidate is eligible for the admission");
+    else 
+      printf("the candidate is not eligible for the admisson"); 
+}
+
+---------------------------------------------------
+
+7th program; 
+
+void main(){ 
+
+int temp; 
+
+printf("Enter the temperature"); 
+scanf("%i", &temp);
+
+if (temp <= 0)
+printf("it is freazing weather"); 
+else if (temp > 0 && temp < 10)
+    printf("It is very cold weather"); 
+else if (temp > 10 && temp < 20)
+    printf("Cold weather"); 
+else if (temp > 20 && temp <30 )
+    printf("Normal Tempreature"); 
+else if (temp > 30 && temp < 40 )
+    printf("It is HOT"); 
+else if (temp >= 40)
+    printf("it is very HOT"); 
+}
+
+---------------------------------------------------
+
+8th program; 
+
+void main (){ 
+
+  int a=0, a2=0, a3=0;
+
+  printf("Enter the Angles of the triangle"); 
+  scanf("%i %i %i", &a , &a2, &a3); 
+  if (a == a2 == a3) 
+      printf("The triangle is Equilateral"); 
+  else if (a == a2)
+      printf("The triangle is Isosceles"); 
+  else 
+      printf("Triangle is scalene");   
+
+}
+
+---------------------------------------------------
+
+9th program; 
+
+void main(){
+
+int a=0, b=0, c=0; 
+printf("Enter the angles of the triangle"); 
+scanf("%i %i %i", &a , &b, &c); 
+
+if (a + b + c == 180)
+printf("Triangle is formed"); 
+else 
+    printf("The triangle is not valid");
+
+}
+
+---------------------------------------------------
+
+
