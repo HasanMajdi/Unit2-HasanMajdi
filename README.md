@@ -373,6 +373,22 @@ peripheral or peripheral device is an ancillary device used to put information i
 
 **Input-Output peripherals:** Allows both input(from outised world to computer) as well as, output(from computer to the outside world). Example: Touch screen etc.
 
+
+**Programming in C language**
+
+**What is C?**
+
+C is a high-level and general-purpose programming language that is ideal for developing firmware or portable applications. Originally intended for writing system software, C was developed at Bell Labs by Dennis Ritchie for the Unix Operating System in the early 1970s. 
+
+**What is the experiance like?**
+
+As a person who have tried BASH and Arduino, I would say C is much more Comfort working with than BASH and Arduino, i think because bash is more complex in terms of writing and it has so many requairments to the code in order to run smothely, also in Arduino because we are not only dealing with coding (the softwear part), but we have to do the hardwear also which is making it more harder. 
+
+**Codes I have Done in C**
+
+1. 
+
+
 ## References
 [1]  international design fundation "Usability". 25 Nov, 2019
 
