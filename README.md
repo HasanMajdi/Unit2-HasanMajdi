@@ -376,7 +376,7 @@ peripheral or peripheral device is an ancillary device used to put information i
 
 **Programming in C language**
 
-   ![C-programming.png](.png)
+   ![Binary-MorseProgram](programming.png)
 
 **What is C?**
 
