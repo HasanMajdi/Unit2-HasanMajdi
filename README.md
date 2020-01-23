@@ -327,9 +327,44 @@ We are using this method to decrease the amount of time and effort spent on the 
 
 **ROM:**  Read-Only-Memory 
 
+
+|**level**|**Description**|
+|-----|------------|
+
+
+**Types of Data**
+``
+boolean (8 bit) - simple logical true/false
+byte (8 bit) - unsigned number from 0-255
+char (8 bit) - signed number from -128 to 127. 
+unsigned char (8 bit) - same as 'byte'; 
+word (16 bit) - unsigned number from 0-65535
+unsigned int (16 bit)
+int (16 bit) - signed number from -32768 to 32767. 
+unsigned long (32 bit) - unsigned number from 0-4,294,967,295. 
+long (32 bit) - signed number from -2,147,483,648 to 2,147,483,647
+float (32 bit) - signed number from -3.4028235E38 to 3.4028235E38
+``
 **Feasibility Study:**  Analyzes a project and its potential, it is used to tell whether the project is should be pursued or not
 
 **Utilitarianism:** When designing a new system, we usually try to design it for the greatest good for the greatest number of people. Utilitarianism • When designing a new system, we usually try to design it for the greatest good for the greatest number of people. 
+
+**IMAP** 
+
+In computing, the **Internet Message Access Protocol** (IMAP) is an Internet standard protocol used by email clients to retrieve email messages from a mail server over a TCP/IP connection. 
+it Can be found in the Email. 
+
+
+
+**Registers**
+
+in computer architecture, a processor register is a quickly accessible location available to a computer's central processing unit (CPU). 
+
+Registers usually consist of a small amount of fast storage.
+Registers are typically addressed by mechanisms other than main memory, but may in some cases be assigned a memory address. 
+
+Registers are normally measured by the number of bits they can hold, for example, an "8-bit register", "32-bit register" or a "64-bit register" or even more.
+
 
 **Logic Gates:** A combinational circuit that performs an elementary logic operation and usually involves one output.
 
@@ -338,6 +373,10 @@ We are using this method to decrease the amount of time and effort spent on the 
 It is part of user experience. 
 Process of designing a product with users preferences in mind. 
 degree of ease that a product can be used to attain the proposed goal [1].
+
+**Human-centerd design HCD**
+
+Human-centerd design HCD according to Wikipedia[2] is an approach to problem solving, commonly used in design and management frameworks that develops solutions to problems by involving the human perspective in all steps of the problem-solving process. Human involvement typically takes place in observing the problem within context, brainstorming, conceptualizing, developing, and implementing the solution.
 
 **What is HCD?**
 human-centered design or (HCD), it is a Design processes which involve the end user throughout the product development and testing process, can be crucial in ensuring that the product meets the needs and capabilities of the user [2].
@@ -388,7 +427,122 @@ As a person who have tried BASH and Arduino, I would say C is much more Comfort 
 
 **Codes I have Done in C**
 
-1. 
+1. A program in C to display the cube of the number upto given an integer.
+
+``.C 
+int main(void) {
+//define variables 
+int i,cube,num; 
+//ask user for number
+printf("Enter a number"); 
+scanf("%d",&num);
+
+for (int i=1; i<=num; i++){
+printf("Number is : %d and cube of the %d is :%d \n",i,i, (i*i*i));
+     } 
+}
+``.C 
+
+2. A program in C to read 10 numbers from keyboard and find their sum and average.
+
+``.C
+
+int main(void) {
+  
+  //Define varaibles 
+  int num; 
+  int sum=0; 
+  float ave; 
+  //Ask user for nmbers 
+  for (int i=0; i<10; i++){
+  printf("Enter the number\n"); 
+  scanf("%d", &num); 
+  //calculate the sum 
+   sum += num; 
+   ave = sum / 10; 
+  }
+  //show restlt 
+  printf("the addition of this is %d\n",sum); 
+  printf("the averge is %f", ave); 
+}
+
+``.C
+
+3. A program a C program to calculate the factorial of a given number.
+
+``.C 
+
+int main(void) {
+
+int i,f=1,num;
+
+    printf("Input number of terms : ");
+    scanf("%d", &num);
+    for(i=1;i<=num;i++)
+    f=f*i;
+    {
+	 printf("The Factorial of %d is: %d",num,f);     
+   }
+ }
+ 
+ ``.C
+ 
+ 4. A program in C to display the number in reverse order.
+ 
+ ``.C 
+ 
+ void main(){
+    int num,r,sum=0,t;
+
+    printf("Input a number: ");
+    scanf("%d",&num);
+
+    for(t=num; num != 0; num=num/10) {
+         r=num % 10;
+         sum=sum*10+r;
+    }
+printf("The number in reverse order is : %d \n",sum);
+}
+
+``.C 
+
+In C, it is important is that you tell the program the variable, store and show the data type. 
+for example: 
+``.C 
+scanf("%d",&num);
+``.C 
+here the variable is shown as &num and the data type at the begining as %d.
+
+5. A program in C to find the sum of the series 1 +11 + 111 + 1111 + .. n terms.
+
+``.C 
+
+int main(void) {
+//define varibles
+int i,n,t=1,sum=0; 
+//ask user for number
+printf("Enter number");
+scanf("%d",&n);
+for (i=1;i<=n;i++)
+{
+     printf("%d ",t);
+      if (i<n)
+      {
+          printf("+"); 
+          
+      }
+//printing 1 as long as i<n
+     sum=sum+t;
+     t=(t*10)+1;
+  }
+  printf("\nThe Sum is : %d\n",sum);
+}
+
+``.C 
+
+
+ 
+
 
 
 ## References
