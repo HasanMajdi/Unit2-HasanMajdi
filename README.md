@@ -429,7 +429,8 @@ As a person who have tried BASH and Arduino, I would say C is much more Comfort 
 
 1. A program in C to display the cube of the number upto given an integer.
 
-``.C 
+```.C
+
 int main(void) {
 //define variables 
 int i,cube,num; 
@@ -441,11 +442,12 @@ for (int i=1; i<=num; i++){
 printf("Number is : %d and cube of the %d is :%d \n",i,i, (i*i*i));
      } 
 }
-``.C 
+
+```.C 
 
 2. A program in C to read 10 numbers from keyboard and find their sum and average.
 
-``.C
+```.C
 
 int main(void) {
   
@@ -466,11 +468,11 @@ int main(void) {
   printf("the averge is %f", ave); 
 }
 
-``.C
+```.C
 
 3. A program a C program to calculate the factorial of a given number.
 
-``.C 
+```.C 
 
 int main(void) {
 
@@ -485,11 +487,11 @@ int i,f=1,num;
    }
  }
  
- ``.C
+ ```.C
  
  4. A program in C to display the number in reverse order.
  
- ``.C 
+ ```.C 
  
  void main(){
     int num,r,sum=0,t;
@@ -504,18 +506,18 @@ int i,f=1,num;
 printf("The number in reverse order is : %d \n",sum);
 }
 
-``.C 
+```.C 
 
 In C, it is important is that you tell the program the variable, store and show the data type. 
 for example: 
-``.C 
+```.C 
 scanf("%d",&num);
-``.C 
+```.C 
 here the variable is shown as &num and the data type at the begining as %d.
 
 5. A program in C to find the sum of the series 1 +11 + 111 + 1111 + .. n terms.
 
-``.C 
+```.C 
 
 int main(void) {
 //define varibles
@@ -538,7 +540,7 @@ for (i=1;i<=n;i++)
   printf("\nThe Sum is : %d\n",sum);
 }
 
-``.C 
+```.C 
 
 
  
