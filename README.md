@@ -35,9 +35,102 @@ SolutionOverview
 -----------------
 
 ### System Diagrams 
-Here are the flow diagrams for the codes. 
+Flow charts are a good tool to make the code understandble and easier to work with, therefore, Here are the flow diagrams for the following codes. 
 
-**fig.1** flow chart of English to binary system
+![Binary-MorseProgram](EnglishInputSystem.png)
+**fig.1**: here is the flow chart for the english input system that we used in order to communicate in understandble messages, since it is one of the success crateria and one of the things that the clints need. 
+This is the code: 
+``` 
+// include the library code:
+#include <LiquidCrystal.h>
+int index = 0;
+// add all the letters and digits to the keyboard
+String keyboard[]={"A", "B","C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "SEND", "DEL", "SPACE"};
+String text = "";
+int numOptions = 3;
+int ledPort=8;
+char letters;
+int buta[2]={9, 13};
+
+
+
+// initialize the library with the numbers of the interface pins
+LiquidCrystal lcd(12, 11, 5, 4, 9, 8, 6);
+
+void setup() {
+  // set up the LCD's number of columns and rows:
+  lcd.begin(16,2);
+  // Print a message to the LCD.
+  attachInterrupt(0, changeLetter, RISING);//button A in port 2
+  attachInterrupt(1, selected, RISING);//button B in port 3
+  pinMode(ledPort, OUTPUT);
+  pinMode(buta[2], OUTPUT);
+   
+ 
+ 
+}
+
+void loop() {
+  // set the cursor to column 0, line 1
+  // (note: line 1 is the second row, since counting begins with 0):
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  lcd.print(keyboard[index]);
+  lcd.setCursor(0, 1);
+  lcd.print(text);
+  delay(100);
+}
+
+//This function changes the letter in the keyboard
+void changeLetter(){
+  static unsigned long last_interrupt_time = 0;
+  unsigned long interrupt_time = millis();
+  if (interrupt_time - last_interrupt_time > 200)
+  {
+ 
+    last_interrupt_time = interrupt_time;// If interrupts come faster than 200ms, assum
+    index++;
+      //check for the max row number
+    if(index==numOptions){
+      index=0; //loop back to first row
+    }
+ }
+}
+
+//this function adds the letter to the text or send the msg
+void selected(){
+  static unsigned long last_interrupt_time = 0;
+  unsigned long interrupt_time = millis();
+  if (interrupt_time - last_interrupt_time > 200)
+  {
+ 
+    last_interrupt_time = interrupt_time;// If interrupts come faster than 200ms, assum
+   
+    String key = keyboard[index];
+    if (key == "DEL")
+    {
+      int len = text.length();
+      text.remove(len-1);
+    }
+    else if(key == "SENT")
+    {
+      convertbin();
+      text="";
+    }
+    else if(key == "SPACE")
+    {
+  text += " ";
+    }else{
+      text += key;
+    }
+    index = 0; //restart the index
+  }
+ 
+}
+```.C 
+
+
+**fig.2** flow chart of English to binary system
 ![Binary-MorseProgram](EnglishBinaryFlow.png)
 ![Binary-MorseProgram](EnglidhBinaryFlow2.png)
 ![Binary-MorseProgram](EnglidhBinaryFlow3.png)
