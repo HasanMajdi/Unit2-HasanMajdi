@@ -40,7 +40,7 @@ Flow charts are a good tool to make the code understandble and easier to work wi
 ![Binary-MorseProgram](EnglishInputSystem.png)
 **fig.1**: here is the flow chart for the english input system that we used in order to communicate in understandble messages, since it is one of the success crateria and one of the things that the clints need. 
 This is the code: 
-``` 
+```.C
 // include the library code:
 #include <LiquidCrystal.h>
 int index = 0;
@@ -127,7 +127,8 @@ void selected(){
   }
  
 }
-```.C 
+
+```
 
 
 **fig.2** flow chart of English to binary system
