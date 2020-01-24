@@ -39,8 +39,8 @@ Here are the flow diagrams for the codes.
 
 **fig.1** flow chart of English to binary system
 ![Binary-MorseProgram](EnglishBinaryFlow.png)
-![Binary-MorseProgram](EnglishBinaryFlow2.png)
-![Binary-MorseProgram](EnglishBinaryFlow3.png)
+![Binary-MorseProgram](EnglidhBinaryFlow2.png)
+![Binary-MorseProgram](EnglidhBinaryFlow3.png)
 
 **Tables** 
 Tables for the English to binary system, this is used to mke it easier to determine the the letters and the binary used.  
