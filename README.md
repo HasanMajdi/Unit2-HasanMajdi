@@ -425,7 +425,7 @@ Logic gates are the basic building blocks of any digital system. It is an electr
 
 ### K-Map Tables**
 
-**Fig.8** The Karnaugh map is a method of simplifying Boolean algebra expressions.
+**Fig.8** The Karnaugh map is a method of simplifying Boolean algebra expressions. *(check Fig.3)*
 ![Binary-MorseProgram](Kmaps.gif)
 
 **Fig.9** Equations for outputs B and C from this table.
@@ -678,12 +678,6 @@ void convertbin(){
 **D.R.Y:** 
 In software engineering, don't repeat yourself is a principle of software development aimed at reducing repetition of software patterns. Writing Everything Twice **(WET)** is a cheeky abbreviation to mean the opposite i.e. code that doesn't adhere to DRY principle.
 ![Binary-MorseProgram](DRY.png)
-
-
-
-|**level**|**Description**|
-|-----|------------|
-
 
 **Types of Data**
 
