@@ -443,7 +443,7 @@ printf("Number is : %d and cube of the %d is :%d \n",i,i, (i*i*i));
      } 
 }
 
-```.C 
+```
 
 2. A program in C to read 10 numbers from keyboard and find their sum and average.
 
@@ -468,11 +468,13 @@ int main(void) {
   printf("the averge is %f", ave); 
 }
 
-```.C
+```
+
 
 3. A program a C program to calculate the factorial of a given number.
 
-```.C 
+
+```.C
 
 int main(void) {
 
@@ -487,11 +489,11 @@ int i,f=1,num;
    }
  }
  
- ```.C
+ ```
  
  4. A program in C to display the number in reverse order.
  
- ```.C 
+ ```.C
  
  void main(){
     int num,r,sum=0,t;
@@ -506,13 +508,13 @@ int i,f=1,num;
 printf("The number in reverse order is : %d \n",sum);
 }
 
-```.C 
+```
 
 In C, it is important is that you tell the program the variable, store and show the data type. 
 for example: 
 ```.C 
 scanf("%d",&num);
-```.C 
+```
 here the variable is shown as &num and the data type at the begining as %d.
 
 5. A program in C to find the sum of the series 1 +11 + 111 + 1111 + .. n terms.
@@ -540,7 +542,7 @@ for (i=1;i<=n;i++)
   printf("\nThe Sum is : %d\n",sum);
 }
 
-```.C 
+```
 
 
  
