@@ -905,6 +905,14 @@ in this part we wil be looking at the evaluation of the project as a whole and l
 |6. The system is simple to use and considering Usability.| MET |
 |7. The communication is simple and it doesn't require any additional knowledge.| MET |
 
+### Improvement 
+
+The program works wel but ofcourse we always have to update and add new features and get feedback from the users to improve our work, therefore, from a simple experiance we have noticed to improve these points: 
+
+1. The arduino has so many wires, which makes it hard to work with, also makes it harder to press the buttons. 
+2. Adding a memory tool, so you can store information and messeges. 
+3. After while, maybe colecting the most common letters and put them first so it is faster for user to send messeges.
+4. Using lights is a bit hard to read, so i would say using another method would be easier. 
 
 References
 ----------
