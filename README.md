@@ -29,6 +29,7 @@ then sending messages from/to these stations, why arduino? because arduino is si
 4. LCD screen is there to show the messages.
 5. The system allows the clients to use all English letters, all numbers, and SEND, DELETE, and SPACE are existed options
 6. The system is simple to use and considering Usability.
+7. The communication is simple and it doesn't require any additional knowledge
 
 
 SolutionOverview
@@ -39,6 +40,10 @@ Flow charts are a good tool to make the code understandble and easier to work wi
 
 ![Binary-MorseProgram](EnglishInputSystem.png)
 **fig.1**: here is the flow chart for the english input system that we used in order to communicate in understandble messages, since it is one of the success crateria and one of the things that the clints need. 
+it is also shows how Interrupt works, but what is an interrupt? 
+
+An **Interrupt**'s job is to make sure that the processor responds quickly to important events. When a certain signal is detected, an Interrupt as the name suggests interrupts whatever the processor is doing, and executes some code designed to react to whatever external stimulus is being sent to the Arduino. 
+
 This is the code: 
 ```.C
 // include the library code:
@@ -131,16 +136,15 @@ void selected(){
 ```
 
 
-**fig.2** flow chart of English to binary system
+**Fig.2** flow chart of English to binary system
 ![Binary-MorseProgram](EnglishBinaryFlow.png)
 ![Binary-MorseProgram](EnglidhBinaryFlow2.png)
 ![Binary-MorseProgram](EnglidhBinaryFlow3.png)
 
-**Tables** 
-Tables for the English to binary system, this is used to mke it easier to determine the the letters and the binary used.  
+**Fig.3**: 
+***Tables** for the English to binary system, this is used to mke it easier to determine the the letters and the binary used. 
 ![Binary-MorseProgram](tabela1.png)
 ![Binary-MorseProgram](tabela2.png)
-
 
 Development
 -----------
@@ -409,7 +413,7 @@ void displayBinary(byte num)
 
 Logic gates are the basic building blocks of any digital system. It is an electronic circuit having one or more than one input and only one output. The relationship between the input and the output is based on a certain logic. Based on this, logic gates are named as AND gate, OR gate, NOT gate XOR gate or so.
 
-**K-Map Tables**
+### K-Map Tables**
 
 The Karnaugh map is a method of simplifying Boolean algebra expressions.
 ![Binary-MorseProgram](Kmaps.gif)
