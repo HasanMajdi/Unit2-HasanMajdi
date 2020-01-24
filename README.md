@@ -37,6 +37,14 @@ SolutionOverview
 ### System Diagrams 
 Here are the flow diagrams for the codes. 
 
+**fig.1** flow chart of English to binary system
+![Binary-MorseProgram](english to binary kelven .pdf)
+
+**Tables** 
+Tables for the English to binary system, this is used to mke it easier to determine the the letters and the binary used.  
+![Binary-MorseProgram](tabela1.png)
+![Binary-MorseProgram](tabela2.png)
+
 
 Development
 -----------
