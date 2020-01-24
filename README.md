@@ -10,8 +10,8 @@ Contents
   1. [Planning](#planning)
   1. [SolutionOverview](#SolutionOverview)
   1. [Development](#development)
-  1. [Evalution](#evaluation)
-  1. [improvements](#improvements)
+  1. [Evaluation](#evaluation)
+  1. [References](#References)
   
   Planning
 ----------
@@ -149,7 +149,8 @@ void selected(){
 ![Binary-MorseProgram](tabela2.png)
 
 **TEST PLAN**
-This is the test plan for the stations 
+
+**Fig.4** This is the test plan for the stations 
 from Earth to Moon, from Moon to Mars. 
 ![Binary-MorseProgram](TestPlan.png)
 
@@ -313,9 +314,9 @@ void loop() {
 This is a Traffic Light created by ThinkerCard, then built in class by Arduino. 
 ![Binary-MorseProgram](Traffic.png)
 
-**Fig. 1.** Circuit for the traffci light
+**Fig.5** Circuit for the traffci light
 
-As you can see in Fig. 1, the circuit for the traffic light includes three LEDs, connected with wires to the Arduino.
+As you can see in Fig.5 , the circuit for the traffic light includes three LEDs, connected with wires to the Arduino.
 
 In class using Arduino Kit.
 
@@ -352,11 +353,11 @@ void loop()
 ```
  
 **Counter In Arduino**
-
 This program creates a binary counter from 0 to 31 with arduino using LED lights. 
 
 **Flow Diagram**
-
+**Fig.5** 
+A flow diagram showing the way the counter works. 
 ![Binary-MorseProgram](CounterFD.jpg)
 
 **How to convert from decimal to binary**
@@ -424,23 +425,23 @@ Logic gates are the basic building blocks of any digital system. It is an electr
 
 ### K-Map Tables**
 
-The Karnaugh map is a method of simplifying Boolean algebra expressions.
+**Fig.8** The Karnaugh map is a method of simplifying Boolean algebra expressions.
 ![Binary-MorseProgram](Kmaps.gif)
 
-Equations for outputs B and C from this table.
+**Fig.9** Equations for outputs B and C from this table.
 ![Binary-MorseProgram](kmap2.jpg)
 
 We are using this method to decrease the amount of time and effort spent on the code. 
-
+```
 (   bool equa = b || (!a && !a && !c) || (a && c);
     digitalWrite(outa, equa);    )
     
     for example the code here is the equation we got from the truth tables we did in the class. 
-    
+```
    
    **Using LCD Screen**
    
-   using LCD screen is really important for this project, because it is part of the sccess criteria to include it. also because we want the client to be comfortable using the project. 
+   **Fig.10** Using LCD screen is really important for this project, because it is part of the sccess criteria to include it. also because we want the client to be comfortable using the project. 
    
    ![Binary-MorseProgram](LCD.png)
    
@@ -704,12 +705,10 @@ float (32 bit) - signed number from -3.4028235E38 to 3.4028235E38
 **Utilitarianism:** When designing a new system, we usually try to design it for the greatest good for the greatest number of people. Utilitarianism • When designing a new system, we usually try to design it for the greatest good for the greatest number of people. 
 
 **IMAP** 
-
 In computing, the **Internet Message Access Protocol** (IMAP) is an Internet standard protocol used by email clients to retrieve email messages from a mail server over a TCP/IP connection. 
 it Can be found in the Email. 
 
 **Registers**
-
 in computer architecture, a processor register is a quickly accessible location available to a computer's central processing unit (CPU). 
 
 Registers usually consist of a small amount of fast storage.
@@ -896,14 +895,28 @@ for (i=1;i<=n;i++)
 
 ```
 
+Evaluation
+----------
+in this part we wil be looking at the evaluation of the project as a whole and looking at how can we improve it. 
 
- 
+### Success Criteria
+
+|**Criteria**|**Met**|
+|-------------|-------|
+|1. Messages should be transfered from/to each station(planet).| MET |
+|2. The system uses 100W lights for communication.| MET |
+|3. The system uses two buttons only to write the messages.| MET |
+|4. LCD screen is there to show the messages.| MET |
+|5. The system allows the clients to use all English letters, all numbers, and SEND, DELETE, and SPACE are existed options.| MET |
+|6. The system is simple to use and considering Usability.| MET |
+|7. The communication is simple and it doesn't require any additional knowledge.| MET |
 
 
+References
+----------
 
-## References
 [1]  international design fundation "Usability". 25 Nov, 2019
-
+                          
 [2] NCBI, "Human-Centered Design Study: Enhancing the Usability of a Mobile Phone App in an Integrated Falls Risk Detection System for Use by Older Adult Users". by Arun Keepanasseril. 30 May, 2017
 
 
