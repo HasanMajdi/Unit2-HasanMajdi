@@ -139,7 +139,7 @@ void selected(){
 **Fig.2** flow chart of English to binary system
 ![Binary-MorseProgram](EnglishBinaryFlow.png)
 ![Binary-MorseProgram](EnglidhBinaryFlow2.png)
-![Binary-MorseProgram](EnglidhBinaryFlow3.png)
+![Binary-MorseProgram](EnglidhBinaryFlow3.png) 
 
 **Fig.3**: 
 
@@ -147,6 +147,12 @@ void selected(){
 
 ![Binary-MorseProgram](tabela1.png)
 ![Binary-MorseProgram](tabela2.png)
+
+**TEST PLAN**
+This is the test plan for the stations 
+from Earth to Moon, from Moon to Mars. 
+![Binary-MorseProgram](TestPlan.png)
+
 
 Development
 -----------
@@ -670,6 +676,8 @@ void convertbin(){
 
 **D.R.Y:** 
 In software engineering, don't repeat yourself is a principle of software development aimed at reducing repetition of software patterns. Writing Everything Twice **(WET)** is a cheeky abbreviation to mean the opposite i.e. code that doesn't adhere to DRY principle.
+![Binary-MorseProgram](DRY.png)
+
 
 
 |**level**|**Description**|
