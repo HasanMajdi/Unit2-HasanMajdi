@@ -142,7 +142,9 @@ void selected(){
 ![Binary-MorseProgram](EnglidhBinaryFlow3.png)
 
 **Fig.3**: 
+
 ***Tables** for the English to binary system, this is used to mke it easier to determine the the letters and the binary used. 
+
 ![Binary-MorseProgram](tabela1.png)
 ![Binary-MorseProgram](tabela2.png)
 
@@ -150,7 +152,8 @@ Development
 -----------
  
  ### Arduino 
- Arduino is an open-source software and hardware development board that can be used by tinkerers, and makers to design and build devices/circuits, Arduino codes are run machine code compiled from either C, C++ or any other language that has a compiler for the Arduino instruction set we 
+ 
+Arduino is an open-source software and hardware development board that can be used by tinkerers, and makers to design and build devices/circuits, Arduino codes are run machine code compiled from either C, C++ or any other language that has a compiler for the Arduino instruction set. 
  
  ### Serial Mentor 
  It is the screen where you see the output of the code you wrote.
@@ -434,14 +437,239 @@ We are using this method to decrease the amount of time and effort spent on the 
    using LCD screen is really important for this project, because it is part of the sccess criteria to include it. also because we want the client to be comfortable using the project. 
    
    ![Binary-MorseProgram](LCD.png)
+   
+   
+### Final Code 
+
+AS shown in Fig.2 and Fig.3, here is the code for the English to binary (Mars). 
+
+```.C
+#include <LiquidCrystal.h>
+int index = 0; 
+// add all the letters and digits to the keyboard
+String keyboard[]={"SEND","A", "B","C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "SEND", "DEL", "SPACE"};
+String text = "";
+int numOptions = 40;
+int ledPort=8;
+int ledPort2=9;
+char letters;
+
+
+
+// initialize the library with the numbers of the interface pins
+LiquidCrystal lcd(12, 11, 7, 6, 5, 4);
+
+void setup() {
+  // set up the LCD's number of columns and rows:
+  Serial.begin(9600);
+  lcd.begin(16,2);
+  // Print a message to the LCD.
+  attachInterrupt(0, changeLetter, RISING);//button A in port 2
+  attachInterrupt(1, selected, RISING);//button B in port 3
+  pinMode(ledPort, OUTPUT);
+  pinMode(ledPort2, OUTPUT);
+  
+   
+ 
+  
+}
+
+void loop() {
+  // set the cursor to column 0, line 1
+  // (note: line 1 is the second row, since counting begins with 0):
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  lcd.print(keyboard[index]);
+  lcd.setCursor(0, 1);
+  lcd.print(text);
+  delay(100);
+  digitalWrite(13, HIGH);
+}
+
+//This function changes the letter in the keyboard
+void changeLetter(){
+  static unsigned long last_interrupt_time = 0;
+  unsigned long interrupt_time = millis();
+  if (interrupt_time - last_interrupt_time > 200)
+  {
+  
+    last_interrupt_time = interrupt_time;// If interrupts come faster than 200ms, assum
+    index++;
+      //check for the max row number
+    if(index==numOptions){
+      index=0; //loop back to first row
+    } 
+ }
+}
+
+//this function adds the letter to the text or send the msg
+void selected(){
+  static unsigned long last_interrupt_time = 0;
+  unsigned long interrupt_time = millis();
+  if (interrupt_time - last_interrupt_time > 200)
+  {
+  
+    last_interrupt_time = interrupt_time;// If interrupts come faster than 200ms, assum
+    
+    String key = keyboard[index];
+    if (key == "DEL")
+    {
+      int len = text.length();
+      text.remove(len-1);
+    }
+    else if(key == "SEND")
+    {
+      convertbin();
+      text="";
+    }
+    else if(key == "SPACE")
+    {
+     text += " ";
+    }else{
+      text += key;
+    }
+    index = 0; //restart the index
+  }
+  
+}
+
+void convertbin(){
+
+// if 2 lights ON = 1, if 1 light ON = 0
+// if 2 lights OFF break
+// if 1 light ON 1s  = 0, if 1 lights ON 2s = 00…
+//  if 2 light ON 1s  = 1, if 1 lights ON 2s = 11…
+  
+  String code; 
+  for(int i=0; i<text.length();i++){
+    letters = text[i];
+    Serial.print(letters);
+      switch (letters) {
+
+         case 'A':
+           //code  = "001010";
+
+         digitalWrite(ledPort, LOW);
+         digitalWrite(ledPort2, HIGH);
+         delay(200000);
+         digitalWrite(ledPort, LOW);
+         digitalWrite(ledPort2, HIGH);
+         delay(200000);
+       digitalWrite(ledPort, HIGH);
+       digitalWrite(ledPort2, HIGH);
+         delay(200000);
+         digitalWrite(ledPort, LOW);
+         digitalWrite(ledPort2, HIGH);
+         delay(200000);
+         digitalWrite(ledPort, HIGH);
+         digitalWrite(ledPort2, HIGH);
+         delay(200000);
+         digitalWrite(ledPort, LOW);
+         digitalWrite(ledPort2, HIGH);
+         delay(200000);
+         digitalWrite(ledPort, LOW);
+         digitalWrite(ledPort2, LOW);
+         delay(200000);
+         
+         break;
+      
+       case 'B':
+         //code = "001011"; 
+         digitalWrite(ledPort, LOW);
+         digitalWrite(ledPort2, HIGH);
+         delay(200000);
+         digitalWrite(ledPort, LOW);
+         digitalWrite(ledPort2, HIGH);
+         delay(200000);
+       digitalWrite(ledPort, HIGH);
+       digitalWrite(ledPort2, HIGH);
+         delay(200000);
+         digitalWrite(ledPort, LOW);
+         digitalWrite(ledPort2, HIGH);
+         delay(200000);
+         digitalWrite(ledPort, HIGH);
+         digitalWrite(ledPort2, HIGH);
+         delay(200000);
+         digitalWrite(ledPort, HIGH);
+         digitalWrite(ledPort2, HIGH);
+         delay(200000);
+         digitalWrite(ledPort, LOW);
+         digitalWrite(ledPort2, LOW);
+         delay(200000);
+         break;
+         
+       case 'C':
+         //code = "001100";
+         digitalWrite(ledPort, LOW);
+         digitalWrite(ledPort2, HIGH);
+         delay(200000);
+         digitalWrite(ledPort, LOW);
+         digitalWrite(ledPort2, HIGH);
+         delay(200000);
+       digitalWrite(ledPort, HIGH);
+       digitalWrite(ledPort2, HIGH);
+         delay(200000);
+         digitalWrite(ledPort, HIGH);
+         digitalWrite(ledPort2, HIGH);
+         delay(200000);
+         digitalWrite(ledPort, LOW);
+         digitalWrite(ledPort2, HIGH);
+         delay(200000);
+         digitalWrite(ledPort, LOW);
+         digitalWrite(ledPort2, HIGH);
+         delay(200000);
+         digitalWrite(ledPort, LOW);
+         digitalWrite(ledPort2, LOW);
+         delay(200000);
+         break;
+         
+       case 'D': 
+         //code = "001101";
+         digitalWrite(ledPort, LOW);
+         digitalWrite(ledPort2, HIGH);
+         delay(200000);
+         digitalWrite(ledPort, LOW);
+         digitalWrite(ledPort2, HIGH);
+         delay(200000);
+       digitalWrite(ledPort, HIGH);
+       digitalWrite(ledPort2, HIGH);
+         delay(200000);
+         digitalWrite(ledPort, HIGH);
+         digitalWrite(ledPort2, HIGH);
+         delay(200000);
+         digitalWrite(ledPort, LOW);
+         digitalWrite(ledPort2, HIGH);
+         delay(200000);
+         digitalWrite(ledPort, HIGH);
+         digitalWrite(ledPort2, HIGH);
+         delay(200000);
+         digitalWrite(ledPort, LOW);
+         digitalWrite(ledPort2, LOW);
+         delay(200000);
+         break;
+        
+	**the rest of the code is in a seperated file on the repo**
+	
+      }
+  }
+}
+ ```
 
 ### Important Terms
 
-**CPU:**  Central Processing Unit
+**CPU:**  | Central Processing Unit
 
-**RAM:**  Random Access Memory 
+**RAM:**  | Random Access Memory 
 
-**ROM:**  Read-Only-Memory 
+**ROM:**  | Read-Only-Memory 
+
+**POP3:** | Send/receive emails and download emails
+
+**HTTP** | The Hypertext Transfer Protocol (HTTP) is an application protocol for distributed, collaborative, hypermedia                | information systems.
+
+
+**D.R.Y:** 
+In software engineering, don't repeat yourself is a principle of software development aimed at reducing repetition of software patterns. Writing Everything Twice **(WET)** is a cheeky abbreviation to mean the opposite i.e. code that doesn't adhere to DRY principle.
 
 
 |**level**|**Description**|
@@ -449,18 +677,20 @@ We are using this method to decrease the amount of time and effort spent on the 
 
 
 **Types of Data**
-``
+
+```
 boolean (8 bit) - simple logical true/false
 byte (8 bit) - unsigned number from 0-255
 char (8 bit) - signed number from -128 to 127. 
 unsigned char (8 bit) - same as 'byte'; 
 word (16 bit) - unsigned number from 0-65535
-unsigned int (16 bit)
+unsigned int (16 bit)                       
 int (16 bit) - signed number from -32768 to 32767. 
 unsigned long (32 bit) - unsigned number from 0-4,294,967,295. 
 long (32 bit) - signed number from -2,147,483,648 to 2,147,483,647
 float (32 bit) - signed number from -3.4028235E38 to 3.4028235E38
-``
+```
+
 **Feasibility Study:**  Analyzes a project and its potential, it is used to tell whether the project is should be pursued or not
 
 **Utilitarianism:** When designing a new system, we usually try to design it for the greatest good for the greatest number of people. Utilitarianism • When designing a new system, we usually try to design it for the greatest good for the greatest number of people. 
@@ -469,8 +699,6 @@ float (32 bit) - signed number from -3.4028235E38 to 3.4028235E38
 
 In computing, the **Internet Message Access Protocol** (IMAP) is an Internet standard protocol used by email clients to retrieve email messages from a mail server over a TCP/IP connection. 
 it Can be found in the Email. 
-
-
 
 **Registers**
 
