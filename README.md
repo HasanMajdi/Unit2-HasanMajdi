@@ -432,7 +432,7 @@ Logic gates are the basic building blocks of any digital system. It is an electr
 ![Binary-MorseProgram](kmap2.jpg)
 
 We are using this method to decrease the amount of time and effort spent on the code. 
-```
+```.C
 (   bool equa = b || (!a && !a && !c) || (a && c);
     digitalWrite(outa, equa);    )
     
